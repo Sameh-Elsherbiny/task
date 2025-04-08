@@ -1,0 +1,261 @@
+2025-03-19 12:32:56,925 DEBUG cd Task-bench && python3 -m venv env
+2025-03-19 12:32:59,201 DEBUG cd Task-bench && /home/sameh/Task-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-03-19 12:33:00,485 DEBUG cd Task-bench && /home/sameh/Task-bench/env/bin/python -m pip install --quiet wheel
+2025-03-19 12:33:02,087 LOG Getting frappe
+2025-03-19 12:33:02,087 DEBUG cd Task-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-03-19 12:33:09,907 LOG Installing frappe
+2025-03-19 12:33:09,907 DEBUG cd /home/sameh/Task-bench && /home/sameh/Task-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sameh/Task-bench/apps/frappe 
+2025-03-19 12:33:43,846 DEBUG cd /home/sameh/Task-bench && /home/sameh/Task-bench/env/bin/python -m pip install --quiet --upgrade coverage~=6.5.0 Faker~=18.10.1 pyngrok~=6.0.0 unittest-xml-reporting~=3.2.0 watchdog~=3.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.2.2 
+2025-03-19 12:33:48,732 DEBUG cd /home/sameh/Task-bench/apps/frappe && yarn install --check-files
+2025-03-19 12:34:29,132 DEBUG cd /home/sameh/Task-bench && sudo supervisorctl restart frappe:
+2025-03-19 12:34:29,268 WARNING cd /home/sameh/Task-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-03-19 12:34:29,268 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-03-19 12:34:29,269 DEBUG cd Task-bench && bench build
+2025-03-19 12:34:29,361 INFO /home/sameh/Downloads/myenv/bin/bench build
+2025-03-19 12:34:44,380 LOG setting up backups
+2025-03-19 12:34:44,400 LOG backups were set up
+2025-03-19 12:34:44,400 INFO Bench Task-bench initialized
+2025-03-19 12:36:49,707 INFO /home/sameh/Downloads/myenv/bin/bench new-app attendance-management
+2025-03-19 12:36:49,709 LOG creating new app attendance_management
+2025-03-19 12:37:17,324 LOG Installing attendance_management
+2025-03-19 12:37:17,325 DEBUG cd /home/sameh/Task-bench && /home/sameh/Task-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sameh/Task-bench/apps/attendance_management 
+2025-03-19 12:37:18,855 DEBUG bench build --app attendance_management
+2025-03-19 12:37:18,947 INFO /home/sameh/Downloads/myenv/bin/bench build --app attendance_management
+2025-03-19 12:37:20,287 DEBUG cd /home/sameh/Task-bench && sudo supervisorctl restart frappe:
+2025-03-19 12:37:20,420 WARNING cd /home/sameh/Task-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-03-19 12:37:20,420 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-03-19 12:37:38,563 INFO /home/sameh/Downloads/myenv/bin/bench site attendance
+2025-03-19 12:38:01,584 INFO /home/sameh/Downloads/myenv/bin/bench new-site attendance
+2025-03-19 12:39:16,339 INFO /home/sameh/Downloads/myenv/bin/bench --site attendance add-to-hosts
+2025-03-19 12:39:55,708 INFO /home/sameh/Downloads/myenv/bin/bench --site attendance install-app attendance-managment
+2025-03-19 12:40:29,608 INFO /home/sameh/Downloads/myenv/bin/bench --site attendance install-app attendance_management
+2025-03-19 12:40:42,452 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-19 12:40:42,652 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-19 12:40:42,669 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-19 12:40:42,687 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-19 12:40:42,699 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-19 13:27:41,764 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-19 13:27:41,950 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-19 13:27:41,951 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-19 13:27:41,990 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-19 13:27:41,997 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-20 10:30:41,594 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-20 10:30:41,788 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-20 10:30:41,790 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-20 10:30:41,794 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-20 10:30:41,798 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-20 12:00:02,214 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-03-20 13:12:00,901 INFO /home/sameh/Downloads/myenv/bin/bench logs
+2025-03-20 13:12:43,847 INFO /home/sameh/Downloads/myenv/bin/bench --site attendance logs
+2025-03-20 13:13:37,065 INFO /home/sameh/Downloads/myenv/bin/bench --site attendance logs
+2025-03-20 15:17:12,052 INFO /home/sameh/Downloads/myenv/bin/bench --site attendance mariabd
+2025-03-20 15:17:16,506 INFO /home/sameh/Downloads/myenv/bin/bench --site attendance mariadb
+2025-03-20 15:43:18,671 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-20 15:43:18,862 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-20 15:43:18,864 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-20 15:43:18,873 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-20 15:43:18,902 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-20 15:43:36,592 INFO /home/sameh/Downloads/myenv/bin/bench clear-cache
+2025-03-20 15:44:11,606 INFO /home/sameh/Downloads/myenv/bin/bench --site attendance clear-cache
+2025-03-20 18:00:01,722 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-03-23 09:31:45,025 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-23 09:31:45,226 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-23 09:31:45,266 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-23 09:31:45,268 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-23 09:31:45,271 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-23 10:35:46,113 INFO /home/sameh/Downloads/myenv/bin/bench console
+2025-03-23 10:36:19,059 INFO /home/sameh/Downloads/myenv/bin/bench --site attendence console
+2025-03-23 10:36:29,707 INFO /home/sameh/Downloads/myenv/bin/bench --site attendance console
+2025-03-23 11:50:49,884 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-23 11:50:50,080 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-23 11:50:50,085 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-23 11:50:50,094 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-23 11:50:50,113 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-23 12:00:01,491 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-03-23 14:46:37,657 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-23 14:46:37,850 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-23 14:46:37,872 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-23 14:46:37,894 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-23 14:46:37,903 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-23 15:26:29,379 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-23 15:26:29,579 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-23 15:26:29,587 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-23 15:26:29,635 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-23 15:26:29,637 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-23 15:33:12,502 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-23 15:33:12,706 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-23 15:33:12,710 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-23 15:33:12,760 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-23 15:33:12,760 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-23 15:46:28,601 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-23 15:46:28,796 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-23 15:46:28,840 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-23 15:46:28,841 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-23 15:46:28,844 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-23 15:54:33,524 INFO /home/sameh/Downloads/myenv/bin/bench --site attendance console
+2025-03-24 10:56:55,259 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-24 10:56:55,531 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-24 10:56:55,532 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-24 10:56:55,545 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-24 10:56:55,552 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-24 12:00:01,615 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-03-24 13:11:02,765 INFO /home/sameh/Downloads/myenv/bin/bench new-app ideas
+2025-03-24 13:11:02,769 LOG creating new app ideas
+2025-03-24 13:11:25,200 LOG Installing ideas
+2025-03-24 13:11:25,201 DEBUG cd /home/sameh/Task-bench && /home/sameh/Task-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sameh/Task-bench/apps/ideas 
+2025-03-24 13:11:27,302 DEBUG bench build --app ideas
+2025-03-24 13:11:27,411 INFO /home/sameh/Downloads/myenv/bin/bench build --app ideas
+2025-03-24 13:11:35,621 DEBUG cd /home/sameh/Task-bench && sudo supervisorctl restart frappe:
+2025-03-24 13:11:35,780 WARNING cd /home/sameh/Task-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-03-24 13:11:35,780 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-03-24 13:11:53,170 INFO /home/sameh/Downloads/myenv/bin/bench new-site idea
+2025-03-24 13:12:53,250 INFO /home/sameh/Downloads/myenv/bin/bench --site add-to-hosts idea
+2025-03-24 13:13:36,078 INFO /home/sameh/Downloads/myenv/bin/bench --site idea add-to-hosts
+2025-03-24 13:14:02,542 INFO /home/sameh/Downloads/myenv/bin/bench --site idea install-app ideas
+2025-03-24 13:19:28,584 INFO /home/sameh/Downloads/myenv/bin/bench --site idea install-app ideas
+2025-03-24 13:21:42,349 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-24 13:21:42,551 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-24 13:21:42,563 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-24 13:21:42,587 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-24 13:21:42,600 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-24 15:09:29,689 INFO /home/sameh/Downloads/myenv/bin/bench new-web-template idea base_template
+2025-03-24 15:09:46,970 INFO /home/sameh/Downloads/myenv/bin/bench new-web-template --help
+2025-03-24 15:09:59,115 INFO /home/sameh/Downloads/myenv/bin/bench --hel
+2025-03-24 15:10:07,558 INFO /home/sameh/Downloads/myenv/bin/bench --help
+2025-03-25 09:48:36,028 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-25 09:48:36,380 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-25 09:48:36,405 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-25 09:48:36,459 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-25 09:48:36,482 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-25 10:43:59,308 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-25 10:43:59,491 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-25 10:43:59,493 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-25 10:43:59,531 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-25 10:43:59,531 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-25 10:44:20,714 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-25 10:44:20,915 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-25 10:44:20,978 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-25 10:44:20,982 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-25 10:44:20,983 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-25 10:48:43,399 INFO /home/sameh/Downloads/myenv/bin/bench --site ideas clear-cache
+2025-03-25 10:48:48,920 INFO /home/sameh/Downloads/myenv/bin/bench --site idea clear-cache
+2025-03-25 10:49:53,795 INFO /home/sameh/Downloads/myenv/bin/bench build
+2025-03-25 10:50:15,921 INFO /home/sameh/Downloads/myenv/bin/bench restart
+2025-03-25 10:50:18,946 DEBUG cd /home/sameh/Task-bench && sudo supervisorctl restart frappe:
+2025-03-25 10:50:19,093 WARNING cd /home/sameh/Task-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-03-25 10:50:19,093 WARNING /home/sameh/Downloads/myenv/bin/bench restart executed with exit code 1
+2025-03-25 10:50:19,489 INFO /home/sameh/Downloads/myenv/bin/bench clear-cache
+2025-03-25 10:50:25,609 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-25 10:50:25,796 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-25 10:50:25,799 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-25 10:50:25,799 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-25 10:50:25,860 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-25 10:52:28,129 INFO /home/sameh/Downloads/myenv/bin/bench build
+2025-03-25 10:52:53,908 INFO /home/sameh/Downloads/myenv/bin/bench restart
+2025-03-25 10:52:54,423 DEBUG cd /home/sameh/Task-bench && sudo supervisorctl restart frappe:
+2025-03-25 10:52:54,664 WARNING cd /home/sameh/Task-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-03-25 10:52:54,664 WARNING /home/sameh/Downloads/myenv/bin/bench restart executed with exit code 1
+2025-03-25 10:52:55,120 INFO /home/sameh/Downloads/myenv/bin/bench clear-cache
+2025-03-25 10:53:16,705 INFO /home/sameh/Downloads/myenv/bin/bench --site idea clear-cache
+2025-03-25 11:43:49,592 INFO /home/sameh/Downloads/myenv/bin/bench --site idea clear-cache
+2025-03-25 12:00:01,580 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-03-26 01:19:14,569 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-26 01:19:15,230 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-26 01:19:15,258 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-26 01:19:15,278 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-26 01:19:15,289 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-26 09:40:03,824 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-26 09:40:04,150 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-26 09:40:04,170 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-26 09:40:04,176 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-26 09:40:04,223 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-26 09:48:42,758 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-26 09:48:43,632 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-26 09:48:43,645 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-26 09:48:43,651 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-26 09:48:43,677 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-26 10:40:51,085 INFO /home/sameh/Downloads/myenv/bin/bench build
+2025-03-26 10:41:18,343 INFO /home/sameh/Downloads/myenv/bin/bench restart
+2025-03-26 10:41:30,647 DEBUG cd /home/sameh/Task-bench && sudo supervisorctl restart frappe:
+2025-03-26 10:41:30,795 WARNING cd /home/sameh/Task-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-03-26 10:41:30,795 WARNING /home/sameh/Downloads/myenv/bin/bench restart executed with exit code 1
+2025-03-26 12:00:01,582 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-03-27 01:12:21,918 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-27 01:12:22,122 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-27 01:12:22,134 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-27 01:12:22,159 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-27 01:12:22,163 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-27 01:13:12,422 INFO /home/sameh/Downloads/myenv/bin/bench tail -f logs/frappe.log
+2025-03-27 09:42:42,219 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-03-27 09:42:42,552 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-03-27 09:42:42,564 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-03-27 09:42:42,566 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-03-27 09:42:42,591 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-03-27 12:00:02,003 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-04-06 12:00:01,820 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-04-06 18:00:01,888 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-04-06 18:50:57,755 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-06 18:50:57,952 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-04-06 18:50:57,958 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-04-06 18:50:57,963 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-04-06 18:50:57,967 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-04-06 19:05:39,063 INFO /home/sameh/Downloads/myenv/bin/bench new-app treatments
+2025-04-06 19:05:39,067 LOG creating new app treatments
+2025-04-06 19:06:06,559 LOG Installing treatments
+2025-04-06 19:06:06,559 DEBUG cd /home/sameh/Task-bench && /home/sameh/Task-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sameh/Task-bench/apps/treatments 
+2025-04-06 19:06:09,120 DEBUG bench build --app treatments
+2025-04-06 19:06:09,228 INFO /home/sameh/Downloads/myenv/bin/bench build --app treatments
+2025-04-06 19:06:15,815 DEBUG cd /home/sameh/Task-bench && sudo supervisorctl restart frappe:
+2025-04-06 19:06:15,961 WARNING cd /home/sameh/Task-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-04-06 19:06:15,961 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-04-06 19:06:25,403 INFO /home/sameh/Downloads/myenv/bin/bench new-site treatments
+2025-04-06 19:06:29,808 INFO /home/sameh/Downloads/myenv/bin/bench new-site treatment
+2025-04-06 23:16:43,920 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-06 23:16:44,117 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-04-06 23:16:44,139 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-04-06 23:16:44,141 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-04-06 23:16:44,142 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-04-06 23:20:29,543 INFO /home/sameh/Downloads/myenv/bin/bench --site treatment install-app treatments
+2025-04-06 23:22:26,432 INFO /home/sameh/Downloads/myenv/bin/bench --site treatment add-to-hosts
+2025-04-07 00:00:01,949 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-04-07 10:15:21,910 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-07 10:15:22,196 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-04-07 10:15:22,212 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-04-07 10:15:22,231 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-04-07 10:15:22,233 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-04-07 12:00:01,629 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-04-07 18:00:01,923 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-04-08 00:00:02,035 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup
+2025-04-08 02:12:37,234 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-08 02:12:37,422 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-04-08 02:12:37,444 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-04-08 02:12:37,472 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-04-08 02:12:37,473 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-04-08 02:12:58,294 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-08 02:16:43,650 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-08 02:18:51,394 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-08 02:18:52,175 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-04-08 02:18:52,179 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-04-08 02:18:52,186 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-04-08 02:18:52,196 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-04-08 03:43:38,270 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-08 03:43:38,455 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-04-08 03:43:38,458 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-04-08 03:43:38,489 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-04-08 03:43:38,497 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-04-08 08:03:32,181 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-08 08:03:32,483 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-04-08 08:03:32,498 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-04-08 08:03:32,523 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-04-08 08:03:32,536 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-04-08 09:26:36,562 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-08 09:26:36,746 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-04-08 09:26:36,764 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-04-08 09:26:36,785 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-04-08 09:26:36,785 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-04-08 09:29:40,487 INFO /home/sameh/Downloads/myenv/bin/bench start
+2025-04-08 09:29:41,142 INFO /home/sameh/Downloads/myenv/bin/bench serve --port 8006
+2025-04-08 09:29:41,176 INFO /home/sameh/Downloads/myenv/bin/bench schedule
+2025-04-08 09:29:41,178 INFO /home/sameh/Downloads/myenv/bin/bench watch
+2025-04-08 09:29:41,204 INFO /home/sameh/Downloads/myenv/bin/bench worker
+2025-04-08 12:00:02,114 INFO /home/sameh/Downloads/myenv/bin/bench --verbose --site all backup

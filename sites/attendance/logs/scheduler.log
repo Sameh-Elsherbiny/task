@@ -1,0 +1,64 @@
+2025-03-24 10:58:58,273 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for attendance
+2025-03-24 10:58:58,304 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for attendance
+2025-03-24 10:58:58,479 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for attendance
+2025-03-24 10:58:58,589 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for attendance
+2025-03-24 10:58:58,749 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for attendance
+2025-03-24 10:58:58,796 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for attendance
+2025-03-24 10:58:58,898 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for attendance
+2025-03-24 10:58:58,927 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for attendance
+2025-03-24 10:58:58,963 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for attendance
+2025-03-24 10:58:58,972 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for attendance
+2025-03-24 10:58:58,977 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for attendance
+2025-03-24 10:58:58,985 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for attendance
+2025-03-24 10:58:59,002 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for attendance
+2025-03-24 10:58:59,013 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for attendance
+2025-03-24 10:58:59,073 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for attendance
+2025-03-24 10:58:59,077 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for attendance
+2025-03-24 10:58:59,081 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for attendance
+2025-04-07 10:51:27,079 ERROR scheduler Exception in Enqueue Events for Site attendance
+Traceback (most recent call last):
+  File "/home/sameh/Task-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sameh/Task-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sameh/Task-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sameh/Task-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/sameh/Task-bench/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/sameh/Task-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sameh/Task-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/home/sameh/Task-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sameh/Task-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sameh/Task-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sameh/Task-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sameh/Task-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/sameh/Task-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")

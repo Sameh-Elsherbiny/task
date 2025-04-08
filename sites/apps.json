@@ -1,0 +1,41 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "15.59.0"
+    },
+    "attendance_management": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "cbf44886213aef21cb08c398f6268dd46c7d0770",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    },
+    "ideas": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "d2de19087d8c07a911b593ff6801a9c8d7ea619d",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "treatments": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "b1f5930f5a9977f3ff0b8ff2001d72da3d487922",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "0.0.1"
+    }
+}

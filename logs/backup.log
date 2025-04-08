@@ -1,0 +1,233 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250320_120002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-03-20 12:00:03.965588
+Config  : ./attendance/private/backups/20250320_120002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250320_120002-attendance-database.sql.gz         244.6KiB
+Backup for Site attendance has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250320_180002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-03-20 18:00:03.210988
+Config  : ./attendance/private/backups/20250320_180002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250320_180002-attendance-database.sql.gz         257.1KiB
+Backup for Site attendance has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250323_120001-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-03-23 12:00:02.407618
+Config  : ./attendance/private/backups/20250323_120001-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250323_120001-attendance-database.sql.gz         269.1KiB
+Backup for Site attendance has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250324_120001-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-03-24 12:00:02.617657
+Config  : ./attendance/private/backups/20250324_120001-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250324_120001-attendance-database.sql.gz         285.1KiB
+Backup for Site attendance has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250325_120001-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-03-25 12:00:02.662397
+Config  : ./attendance/private/backups/20250325_120001-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250325_120001-attendance-database.sql.gz         292.0KiB
+Backup for Site attendance has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_09cf04c69938fc03 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _09cf04c69938fc03 | /usr/bin/gzip >> ./idea/private/backups/20250325_120002-idea-database.sql.gz
+
+Backup Summary for idea at 2025-03-25 12:00:03.151015
+Config  : ./idea/private/backups/20250325_120002-idea-site_config_backup.json 94.0B
+Database: ./idea/private/backups/20250325_120002-idea-database.sql.gz         228.3KiB
+Backup for Site idea has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250326_120002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-03-26 12:00:05.170735
+Config  : ./attendance/private/backups/20250326_120002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250326_120002-attendance-database.sql.gz         301.9KiB
+Backup for Site attendance has been successfully completed
+File ./idea/private/backups/20250325_120002-idea-database.sql.gz is older than 24 hours
+File ./idea/private/backups/20250325_120002-idea-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_09cf04c69938fc03 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _09cf04c69938fc03 | /usr/bin/gzip >> ./idea/private/backups/20250326_120005-idea-database.sql.gz
+
+Backup Summary for idea at 2025-03-26 12:00:06.561058
+Config  : ./idea/private/backups/20250326_120005-idea-site_config_backup.json 94.0B
+Database: ./idea/private/backups/20250326_120005-idea-database.sql.gz         242.6KiB
+Backup for Site idea has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250327_120002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-03-27 12:00:02.983466
+Config  : ./attendance/private/backups/20250327_120002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250327_120002-attendance-database.sql.gz         312.9KiB
+Backup for Site attendance has been successfully completed
+File ./idea/private/backups/20250326_120005-idea-database.sql.gz is recent
+File ./idea/private/backups/20250326_120005-idea-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_09cf04c69938fc03 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _09cf04c69938fc03 | /usr/bin/gzip >> ./idea/private/backups/20250327_120002-idea-database.sql.gz
+
+Backup Summary for idea at 2025-03-27 12:00:03.583664
+Config  : ./idea/private/backups/20250327_120002-idea-site_config_backup.json 161.0B
+Database: ./idea/private/backups/20250327_120002-idea-database.sql.gz         271.4KiB
+Backup for Site idea has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250406_120002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-04-06 12:00:03.456021
+Config  : ./attendance/private/backups/20250406_120002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250406_120002-attendance-database.sql.gz         317.2KiB
+Backup for Site attendance has been successfully completed
+File ./idea/private/backups/20250327_120002-idea-database.sql.gz is older than 24 hours
+File ./idea/private/backups/20250326_120005-idea-database.sql.gz is older than 24 hours
+File ./idea/private/backups/20250327_120002-idea-site_config_backup.json is older than 24 hours
+File ./idea/private/backups/20250326_120005-idea-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_09cf04c69938fc03 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _09cf04c69938fc03 | /usr/bin/gzip >> ./idea/private/backups/20250406_120003-idea-database.sql.gz
+
+Backup Summary for idea at 2025-04-06 12:00:04.134872
+Config  : ./idea/private/backups/20250406_120003-idea-site_config_backup.json 161.0B
+Database: ./idea/private/backups/20250406_120003-idea-database.sql.gz         279.8KiB
+Backup for Site idea has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250406_180002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-04-06 18:00:02.762276
+Config  : ./attendance/private/backups/20250406_180002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250406_180002-attendance-database.sql.gz         317.2KiB
+Backup for Site attendance has been successfully completed
+File ./idea/private/backups/20250406_120003-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250406_120003-idea-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_09cf04c69938fc03 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _09cf04c69938fc03 | /usr/bin/gzip >> ./idea/private/backups/20250406_180002-idea-database.sql.gz
+
+Backup Summary for idea at 2025-04-06 18:00:03.085818
+Config  : ./idea/private/backups/20250406_180002-idea-site_config_backup.json 161.0B
+Database: ./idea/private/backups/20250406_180002-idea-database.sql.gz         279.8KiB
+Backup for Site idea has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250407_000002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-04-07 00:00:02.916982
+Config  : ./attendance/private/backups/20250407_000002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250407_000002-attendance-database.sql.gz         253.5KiB
+Backup for Site attendance has been successfully completed
+File ./idea/private/backups/20250406_120003-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250406_180002-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250406_180002-idea-database.sql.gz is recent
+File ./idea/private/backups/20250406_120003-idea-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_09cf04c69938fc03 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _09cf04c69938fc03 | /usr/bin/gzip >> ./idea/private/backups/20250407_000002-idea-database.sql.gz
+
+Backup Summary for idea at 2025-04-07 00:00:03.355969
+Config  : ./idea/private/backups/20250407_000002-idea-site_config_backup.json 161.0B
+Database: ./idea/private/backups/20250407_000002-idea-database.sql.gz         252.1KiB
+Backup for Site idea has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_6699137a68e4911e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _6699137a68e4911e | /usr/bin/gzip >> ./treatment/private/backups/20250407_000003-treatment-database.sql.gz
+
+Backup Summary for treatment at 2025-04-07 00:00:03.652189
+Config  : ./treatment/private/backups/20250407_000003-treatment-site_config_backup.json 94.0B
+Database: ./treatment/private/backups/20250407_000003-treatment-database.sql.gz         235.9KiB
+Backup for Site treatment has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250407_120002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-04-07 12:00:04.232873
+Config  : ./attendance/private/backups/20250407_120002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250407_120002-attendance-database.sql.gz         261.1KiB
+Backup for Site attendance has been successfully completed
+File ./idea/private/backups/20250406_120003-idea-site_config_backup.json is older than 24 hours
+File ./idea/private/backups/20250406_180002-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250407_000002-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250406_180002-idea-database.sql.gz is recent
+File ./idea/private/backups/20250407_000002-idea-database.sql.gz is recent
+File ./idea/private/backups/20250406_120003-idea-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_09cf04c69938fc03 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _09cf04c69938fc03 | /usr/bin/gzip >> ./idea/private/backups/20250407_120004-idea-database.sql.gz
+
+Backup Summary for idea at 2025-04-07 12:00:05.836870
+Config  : ./idea/private/backups/20250407_120004-idea-site_config_backup.json 161.0B
+Database: ./idea/private/backups/20250407_120004-idea-database.sql.gz         259.7KiB
+Backup for Site idea has been successfully completed
+File ./treatment/private/backups/20250407_000003-treatment-database.sql.gz is recent
+File ./treatment/private/backups/20250407_000003-treatment-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_6699137a68e4911e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _6699137a68e4911e | /usr/bin/gzip >> ./treatment/private/backups/20250407_120005-treatment-database.sql.gz
+
+Backup Summary for treatment at 2025-04-07 12:00:07.135842
+Config  : ./treatment/private/backups/20250407_120005-treatment-site_config_backup.json 94.0B
+Database: ./treatment/private/backups/20250407_120005-treatment-database.sql.gz         244.9KiB
+Backup for Site treatment has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250407_180002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-04-07 18:00:02.718518
+Config  : ./attendance/private/backups/20250407_180002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250407_180002-attendance-database.sql.gz         266.4KiB
+Backup for Site attendance has been successfully completed
+File ./idea/private/backups/20250407_120004-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250406_180002-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250407_000002-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250407_120004-idea-database.sql.gz is recent
+File ./idea/private/backups/20250406_180002-idea-database.sql.gz is recent
+File ./idea/private/backups/20250407_000002-idea-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_09cf04c69938fc03 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _09cf04c69938fc03 | /usr/bin/gzip >> ./idea/private/backups/20250407_180002-idea-database.sql.gz
+
+Backup Summary for idea at 2025-04-07 18:00:03.000840
+Config  : ./idea/private/backups/20250407_180002-idea-site_config_backup.json 161.0B
+Database: ./idea/private/backups/20250407_180002-idea-database.sql.gz         265.0KiB
+Backup for Site idea has been successfully completed
+File ./treatment/private/backups/20250407_120005-treatment-site_config_backup.json is recent
+File ./treatment/private/backups/20250407_000003-treatment-database.sql.gz is recent
+File ./treatment/private/backups/20250407_000003-treatment-site_config_backup.json is recent
+File ./treatment/private/backups/20250407_120005-treatment-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_6699137a68e4911e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _6699137a68e4911e | /usr/bin/gzip >> ./treatment/private/backups/20250407_180003-treatment-database.sql.gz
+
+Backup Summary for treatment at 2025-04-07 18:00:03.279917
+Config  : ./treatment/private/backups/20250407_180003-treatment-site_config_backup.json 94.0B
+Database: ./treatment/private/backups/20250407_180003-treatment-database.sql.gz         251.3KiB
+Backup for Site treatment has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250408_000002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-04-08 00:00:02.873069
+Config  : ./attendance/private/backups/20250408_000002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250408_000002-attendance-database.sql.gz         272.7KiB
+Backup for Site attendance has been successfully completed
+File ./idea/private/backups/20250407_120004-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250406_180002-idea-site_config_backup.json is older than 24 hours
+File ./idea/private/backups/20250407_000002-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250407_120004-idea-database.sql.gz is recent
+File ./idea/private/backups/20250407_180002-idea-database.sql.gz is recent
+File ./idea/private/backups/20250407_000002-idea-database.sql.gz is recent
+File ./idea/private/backups/20250407_180002-idea-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_09cf04c69938fc03 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _09cf04c69938fc03 | /usr/bin/gzip >> ./idea/private/backups/20250408_000002-idea-database.sql.gz
+
+Backup Summary for idea at 2025-04-08 00:00:03.158177
+Config  : ./idea/private/backups/20250408_000002-idea-site_config_backup.json 161.0B
+Database: ./idea/private/backups/20250408_000002-idea-database.sql.gz         271.2KiB
+Backup for Site idea has been successfully completed
+File ./treatment/private/backups/20250407_120005-treatment-site_config_backup.json is recent
+File ./treatment/private/backups/20250407_180003-treatment-site_config_backup.json is recent
+File ./treatment/private/backups/20250407_000003-treatment-database.sql.gz is recent
+File ./treatment/private/backups/20250407_180003-treatment-database.sql.gz is recent
+File ./treatment/private/backups/20250407_000003-treatment-site_config_backup.json is recent
+File ./treatment/private/backups/20250407_120005-treatment-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_6699137a68e4911e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _6699137a68e4911e | /usr/bin/gzip >> ./treatment/private/backups/20250408_000003-treatment-database.sql.gz
+
+Backup Summary for treatment at 2025-04-08 00:00:03.452444
+Config  : ./treatment/private/backups/20250408_000003-treatment-site_config_backup.json 94.0B
+Database: ./treatment/private/backups/20250408_000003-treatment-database.sql.gz         285.4KiB
+Backup for Site treatment has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_951012fe0999cbe8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _951012fe0999cbe8 | /usr/bin/gzip >> ./attendance/private/backups/20250408_120002-attendance-database.sql.gz
+
+Backup Summary for attendance at 2025-04-08 12:00:03.304867
+Config  : ./attendance/private/backups/20250408_120002-attendance-site_config_backup.json 94.0B
+Database: ./attendance/private/backups/20250408_120002-attendance-database.sql.gz         282.3KiB
+Backup for Site attendance has been successfully completed
+File ./idea/private/backups/20250408_000002-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250407_120004-idea-site_config_backup.json is recent
+File ./idea/private/backups/20250407_000002-idea-site_config_backup.json is older than 24 hours
+File ./idea/private/backups/20250407_120004-idea-database.sql.gz is recent
+File ./idea/private/backups/20250407_180002-idea-database.sql.gz is recent
+File ./idea/private/backups/20250408_000002-idea-database.sql.gz is recent
+File ./idea/private/backups/20250407_180002-idea-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_09cf04c69938fc03 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _09cf04c69938fc03 | /usr/bin/gzip >> ./idea/private/backups/20250408_120003-idea-database.sql.gz
+
+Backup Summary for idea at 2025-04-08 12:00:04.046353
+Config  : ./idea/private/backups/20250408_120003-idea-site_config_backup.json 161.0B
+Database: ./idea/private/backups/20250408_120003-idea-database.sql.gz         280.8KiB
+Backup for Site idea has been successfully completed
+File ./treatment/private/backups/20250407_120005-treatment-site_config_backup.json is recent
+File ./treatment/private/backups/20250407_180003-treatment-site_config_backup.json is recent
+File ./treatment/private/backups/20250408_000003-treatment-database.sql.gz is recent
+File ./treatment/private/backups/20250407_180003-treatment-database.sql.gz is recent
+File ./treatment/private/backups/20250407_000003-treatment-site_config_backup.json is older than 24 hours
+File ./treatment/private/backups/20250408_000003-treatment-site_config_backup.json is recent
+File ./treatment/private/backups/20250407_120005-treatment-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_6699137a68e4911e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _6699137a68e4911e | /usr/bin/gzip >> ./treatment/private/backups/20250408_120004-treatment-database.sql.gz
+
+Backup Summary for treatment at 2025-04-08 12:00:04.711839
+Config  : ./treatment/private/backups/20250408_120004-treatment-site_config_backup.json 94.0B
+Database: ./treatment/private/backups/20250408_120004-treatment-database.sql.gz         349.9KiB
+Backup for Site treatment has been successfully completed
